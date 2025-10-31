@@ -7,11 +7,14 @@ body {
     display: flex;
     flex-direction: column;
 }
-h1, h2, h3, p {
-    font-family: 'Montserrat', sans-serif;
+h1,
+h2,
+h3,
+p {
+    font-family: "Montserrat", sans-serif;
 }
 
-/* div da barra superior */ 
+/* div da barra superior */
 .topbar {
     width: 100%;
     height: 50px;
@@ -25,7 +28,6 @@ h1, h2, h3, p {
     align-items: center;
     gap: 16px;
 }
-
 
 .brand {
     display: flex;
@@ -44,9 +46,9 @@ h1, h2, h3, p {
     box-shadow: 0 0 0 4px #ffffff0f inset;
 }
 
-
-.spacer { flex: 1 }
-
+.spacer {
+    flex: 1;
+}
 
 .links {
     display: flex;
@@ -69,8 +71,8 @@ h1, h2, h3, p {
     background: #f5f5f5;
 }
 
-
-.inscrever, .ver_edital {
+.inscrever,
+.ver_edital {
     white-space: nowrap;
     appearance: none;
     border: 0;
@@ -81,16 +83,17 @@ h1, h2, h3, p {
     color: #fff;
     background: linear-gradient(135deg, #af761f, #f89719);
     box-shadow: 0 6px 20px rgba(137, 211, 131, 0.25);
-    transition: box-shadow .2s ease;
+    transition: box-shadow 0.2s ease;
 }
-.inscrever:focus, .ver_edital:focus {
+.inscrever:focus,
+.ver_edital:focus {
     outline: 3px solid #0a0e0b;
     outline-offset: 2px;
 }
-.inscrever:hover, .ver_edital:hover {
-    box-shadow: 0 6px 16px rgba(0,0,0,.25);
+.inscrever:hover,
+.ver_edital:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
 }
-
 
 .inscrever_2 {
     white-space: nowrap;
@@ -102,16 +105,15 @@ h1, h2, h3, p {
     cursor: pointer;
     color: #fff;
     background: linear-gradient(135deg, #af761f, #f89719);
-    transition: box-shadow .2s ease;
+    transition: box-shadow 0.2s ease;
 }
 .inscrever_2:focus {
     outline: 3px solid #0a0e0b;
     outline-offset: 2px;
 }
 .inscrever_2:hover {
-    box-shadow: 0 6px 16px rgba(0,0,0,.25);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
 }
-
 
 .burger {
     display: none;
@@ -134,9 +136,15 @@ h1, h2, h3, p {
     transition: transform 0.25s ease, opacity 0.2s ease;
 }
 
-.burger .bar:nth-child(1) { top: 12px; }
-.burger .bar:nth-child(2) { top: 19px; }
-.burger .bar:nth-child(3) { top: 26px; }
+.burger .bar:nth-child(1) {
+    top: 12px;
+}
+.burger .bar:nth-child(2) {
+    top: 19px;
+}
+.burger .bar:nth-child(3) {
+    top: 26px;
+}
 
 .burger.open .bar:nth-child(1) {
     transform: translateY(7px) rotate(45deg);
@@ -148,21 +156,19 @@ h1, h2, h3, p {
     transform: translateY(-7px) rotate(-45deg);
 }
 
-
 section {
     max-width: 1200px;
     margin: 0 auto;
     padding: 80px clamp(12px, 3.5vw, 28px);
 }
 
-section#home{
+section#home {
     max-width: 1200px;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 5px;
 }
-
 
 .hero {
     margin-left: 5vw;
@@ -175,9 +181,9 @@ section#home{
     background-color: #f9e7d7;
 }
 
-.hero h1 { 
-    font-size: clamp(28px, 4vw, 44px); 
-    margin: 0 0 20px; 
+.hero h1 {
+    font-size: clamp(28px, 4vw, 44px);
+    margin: 0 0 20px;
     color: #0c0707;
 }
 
@@ -197,7 +203,7 @@ section#home{
 }
 
 .card {
-    background: #130202; 
+    background: #130202;
     border-radius: 20px;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -205,13 +211,13 @@ section#home{
 
 .main-card {
     width: 70%;
-    background-color: #1C4931ff;
+    background-color: #1c4931ff;
     color: #ece9e9;
 }
 
 .side-card {
     width: 30%;
-    background-color: #D85841;
+    background-color: #d85841;
     color: #eee8e8;
     text-align: left;
 }
@@ -224,11 +230,13 @@ section#home{
 .resumo-card {
     margin-top: 20px;
     width: 100%;
-    background-color: #F3B645;
+    background-color: #f3b645;
     color: #140202;
 }
 
-.muted { color: #ece7e7; }
+.muted {
+    color: #ece7e7;
+}
 
 .logo-EU {
     width: 100%;
@@ -247,7 +255,7 @@ section#home{
 }
 
 /* sections */
-section#home{
+section#home {
     margin-top: 3vw;
     margin-left: 4vw;
     margin-right: 4vw;
@@ -270,7 +278,7 @@ section#home{
     flex-direction: column;
     background-color: #f9e7d7;
 
-    box-shadow: inset 0 2px 8px rgba(0,0,0,.20);
+    box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 #info {
@@ -284,9 +292,8 @@ section#home{
     flex-direction: column;
     background-color: #f9e7d7;
 
-    box-shadow: inset 0 2px 8px rgba(0,0,0,.20);
+    box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.2);
 }
-
 
 .button-container {
     display: flex;
@@ -311,7 +318,6 @@ section#home{
     width: 100%;
 }
 
-
 #org {
     max-width: 1200px;
     margin-top: 2vw;
@@ -323,7 +329,7 @@ section#home{
     flex-direction: column;
     background-color: #f9e7d7;
 
-    box-shadow: inset 0 2px 8px rgba(0,0,0,.20);
+    box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 #programacao {
@@ -337,32 +343,31 @@ section#home{
     flex-direction: column;
     background-color: #f9e7d7;
 
-    box-shadow: inset 0 2px 8px rgba(0,0,0,.20);
+    box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* BOTÃO DARK MODE */
 /* Botão do modo escuro */
 .toggle-dark {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 42px;
-  height: 42px;
-  border: 0;
-  background: none;
-  cursor: pointer;
-  padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border: 0;
+    background: none;
+    cursor: pointer;
+    padding: 0;
 }
 .toggle-dark .icon-dark {
-  width: 22px;
-  height: 22px;
+    width: 22px;
+    height: 22px;
 }
-
 
 /* Tema escuro por classe no body */
 body.dark {
-  background: #181a1b;
-  color: #eee;
+    background: #181a1b;
+    color: #eee;
 }
 body.dark a {
     color: white;
@@ -371,17 +376,15 @@ body.dark a:hover {
     color: black;
 }
 
-
 body.dark section,
 body.dark .card {
-  background: #222 !important;
-  color: #eee;
+    background: #222 !important;
+    color: #eee;
 }
 
-
 body.dark button {
-  background: none;
-  color: #fff;
+    background: none;
+    color: #fff;
 }
 body.dark button img {
     filter: brightness(0) invert(1);
@@ -390,52 +393,49 @@ body.dark button .bar {
     filter: brightness(0) invert(1);
 }
 
-
-body.dark .inscrever, .inscrever_2 {
+body.dark .inscrever,
+.inscrever_2 {
     border: 1px solid white;
 }
 
-
-body.dark .inscrever:hover, .inscrever_2:hover {
+body.dark .inscrever:hover,
+.inscrever_2:hover {
     box-shadow: 0 2px 8px rgba(255, 255, 255, 0.2);
 }
 
-
-body.dark .ver_edital, .baixar_tamplate {
+body.dark .ver_edital,
+.baixar_tamplate {
     border: 1px solid white;
     border-radius: 10px;
     font-weight: bold;
     text-align: center;
 }
 
-
 body.dark .link_template:hover {
     text-shadow: 0 2px 8px rgba(255, 255, 255, 0.2);
-    color: #D85841;
+    color: #d85841;
 }
 
-
-.link_template{
+.link_template {
     display: inline-block;
     text-align: center;
     text-decoration: none;
-    color: #1C4931ff;
+    color: #1c4931ff;
     font-size: 15px;
     font-weight: 600;
     padding: 12px 20px;
     margin: 10px;
     background: #fff;
-    border: 2px solid #1C4931ff;
+    border: 2px solid #1c4931ff;
     border-radius: 10px;
     transition: all 0.3s ease;
 }
 .link_template:hover {
-    background: #1C4931ff;
+    background: #1c4931ff;
     color: #fff;
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(28, 73, 49, 0.2);
 }
-
 
 /* Seção de programação */
 .programacao-img-container {
@@ -485,8 +485,12 @@ body.dark .link_template:hover {
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .modal-content {
@@ -543,7 +547,7 @@ body.dark .link_template:hover {
 .link-destaque {
     display: inline-block;
     padding: 16px 32px;
-    background: linear-gradient(135deg, #1C4931ff, #2a6b47);
+    background: linear-gradient(135deg, #1c4931ff, #2a6b47);
     color: white !important;
     text-decoration: none;
     border-radius: 12px;
@@ -557,7 +561,7 @@ body.dark .link_template:hover {
 .link-destaque:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(28, 73, 49, 0.4);
-    background: linear-gradient(135deg, #2a6b47, #1C4931ff);
+    background: linear-gradient(135deg, #2a6b47, #1c4931ff);
 }
 
 /* Seção de informações */
@@ -599,7 +603,7 @@ body.dark .link_template:hover {
 .local-section h3,
 .parcerias-section h3 {
     margin-top: 0;
-    color: #1C4931ff;
+    color: #1c4931ff;
 }
 
 .endereco {
@@ -677,7 +681,7 @@ body.dark .programacao-img {
         color: #ad9d9d;
     }
     .links.open {
-        display: flex; 
+        display: flex;
         flex-direction: column;
     }
     .links.open a {
@@ -686,7 +690,7 @@ body.dark .programacao-img {
     .links.open a:hover {
         color: black;
     }
-    .burger { 
+    .burger {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -753,7 +757,6 @@ body.dark .programacao-img {
     }
 }
 
-
 /*TAMANHO P*/
 @media (max-width: 470px) {
     .topbar {
@@ -782,7 +785,7 @@ body.dark .programacao-img {
         color: #ad9d9d;
     }
     .links.open {
-        display: flex; 
+        display: flex;
         flex-direction: column;
     }
     .links.open a {
@@ -792,7 +795,7 @@ body.dark .programacao-img {
     .links.open a:hover {
         color: black;
     }
-    .burger { 
+    .burger {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -812,14 +815,14 @@ body.dark .programacao-img {
     }
 
     #info .ver_edital {
-        display: flex; 
+        display: flex;
         justify-content: center;
         height: 40px;
         width: 90px;
         font-size: 10px;
     }
 
-     .button-container {
+    .button-container {
         flex-direction: column;
         gap: 8px;
     }
@@ -856,7 +859,8 @@ body.dark .programacao-img {
     .side-card {
         margin-bottom: 2vw;
     }
-    .main-card, .side-card {
+    .main-card,
+    .side-card {
         width: 100%;
         max-width: 1200px;
         padding-right: 15px;
@@ -887,7 +891,7 @@ body.dark .programacao-img {
         cursor: pointer;
     }
 
-     .button-container {
+    .button-container {
         flex-direction: row;
         gap: 10px;
     }
@@ -897,7 +901,9 @@ body.dark .programacao-img {
         font-size: 13px;
     }
 
-    h1, h2, h3 {
+    h1,
+    h2,
+    h3 {
         font-size: 20px;
         margin-bottom: 8px;
         margin-left: 8px;
@@ -909,7 +915,8 @@ body.dark .programacao-img {
         margin-left: 8px;
         margin-right: 8px;
     }
-    ul, li {
+    ul,
+    li {
         margin-top: 0;
         font-size: 13px;
         margin-left: 8px;
