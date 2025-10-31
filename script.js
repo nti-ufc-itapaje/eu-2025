@@ -298,3 +298,53 @@ let ver_edital = document.querySelector('.ver_edital');
 ver_edital.onclick = ()=>{
   window.open('https://itapaje.ufc.br/wp-content/uploads/2025/08/sei-5816356-edital-05-2025-1.pdf', '_blank');
 }
+
+// Modal de imagem
+const modal = document.getElementById('imageModal');
+const programacaoImg = document.getElementById('programacaoImg');
+const modalImg = document.getElementById('modalImg');
+const closeModal = document.querySelector('.modal-close');
+
+// Abrir modal ao clicar na imagem
+if (programacaoImg) {
+    programacaoImg.addEventListener('click', function() {
+        modal.style.display = 'block';
+        modalImg.src = this.src;
+        document.body.style.overflow = 'hidden'; // Previne scroll do body
+    });
+}
+
+// Toggle zoom na imagem do modal
+if (modalImg) {
+    modalImg.addEventListener('click', function(e) {
+        e.stopPropagation();
+        this.classList.toggle('zoomed');
+    });
+}
+
+// Fechar modal ao clicar no X
+if (closeModal) {
+    closeModal.addEventListener('click', function() {
+        modal.style.display = 'none';
+        modalImg.classList.remove('zoomed');
+        document.body.style.overflow = 'auto';
+    });
+}
+
+// Fechar modal ao clicar fora da imagem
+modal.addEventListener('click', function(e) {
+    if (e.target === modal) {
+        modal.style.display = 'none';
+        modalImg.classList.remove('zoomed');
+        document.body.style.overflow = 'auto';
+    }
+});
+
+// Fechar modal com tecla ESC
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && modal.style.display === 'block') {
+        modal.style.display = 'none';
+        modalImg.classList.remove('zoomed');
+        document.body.style.overflow = 'auto';
+    }
+});
